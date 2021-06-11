@@ -1,0 +1,23 @@
+{
+  "name": "markup",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-less": "^4.0.1",
+    "gulp-newer": "^1.4.0",
+    "gulp-rigger": "^0.5.8",
+    "rimraf": "^3.0.0"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "scripts": {
+    "test": "exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

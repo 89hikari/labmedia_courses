@@ -1,0 +1,77 @@
+.lmm-button{
+	&__more{
+		&, &:active, &:visited, &:focus{
+			position: relative;
+			display: inline-block;
+			color: @blue;
+			padding: 10px 55px 9px 25px;
+			border: 2px solid #0060EF;
+			border-radius: 7px;
+			font-size: 14px;
+			line-height: 21px;
+			font-family: "MontserratExtraBold";
+			&:after{
+				content: "";
+				position: absolute;
+				width: 21px;
+				height: 16px;
+				right: 20px;
+				top: 0;
+				bottom: 0;
+				margin: auto;
+				background: url(../images/more.svg) no-repeat center center;
+				background-size: cover;
+			}
+		}
+		&:hover{
+			color: @white;
+			background: @blue;
+			&:after{
+				background: url(../images/more2.svg) no-repeat center center;
+				background-size: cover;
+			}
+		}
+		&.hcb {
+			border: none;
+			color: #FFB372;
+			background-color: #0E0E0E;
+			border: 1px solid #FFB372;
+			// color: transparent;
+			// background: url(../images/hcb/btn.png) no-repeat center top / cover;
+			&:after {
+				content: "";
+				background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyMSAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA3SDE5VjlIMFY3WiIgZmlsbD0iI0ZGQjM3MiIvPjxwYXRoIGZpbGwtcnVsZT0iZXZlbm9kZCIgY2xpcC1ydWxlPSJldmVub2RkIiBkPSJNMTguMjA5MiA4TDEyIDEuNDY3OTZMMTMuMzk1NCAwTDIxIDhMMTMuMzk1NCAxNkwxMiAxNC41MzJMMTguMjA5MiA4WiIgZmlsbD0iI0ZGQjM3MiIvPjwvc3ZnPg==);
+			}
+			&:hover {
+				color: #000000;
+				border: 1px solid #FFE5BD;
+				background-color: #FFE5BD;
+				// background: url(../images/hcb/btn_hover.png) no-repeat center top / cover;
+				&::after{
+					background-image: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjEiIGhlaWdodD0iMTYiIHZpZXdCb3g9IjAgMCAyMSAxNiIgZmlsbD0ibm9uZSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNMCA3SDE5VjlIMFY3WiIgZmlsbD0iYmxhY2siLz48cGF0aCBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgZD0iTTE4LjIwOTIgOEwxMiAxLjQ2Nzk2TDEzLjM5NTQgMEwyMSA4TDEzLjM5NTQgMTZMMTIgMTQuNTMyTDE4LjIwOTIgOFoiIGZpbGw9ImJsYWNrIi8+PC9zdmc+);
+				}
+			}
+		}
+	}
+	&__blue{
+		&, &:active, &:visited, &:focus{
+			position: relative;
+			display: inline-block;
+			color: @white;
+			font-size: 22px;
+			line-height: 30px;
+			padding: 30px 80px;
+			background: #017FF3;
+			border-radius: 650px;
+			@media(max-width: 720px){
+				font-size: 14px;
+				line-height: 21px;
+				padding: 10px 40px;
+			}
+		}
+		&:hover{
+			color: @white;
+			background: @blue;
+		}
+	}
+}

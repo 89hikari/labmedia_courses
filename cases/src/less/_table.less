@@ -1,0 +1,52 @@
+.lmm-table{
+    width: 100%;
+    display: table;
+    border-spacing: 0;
+    border-collapse: collapse;
+    @media(max-width: 719px){
+        display: block;
+    }
+    &__row{
+        display: table-row;
+        @media(max-width: 719px){
+            display: block;
+        }
+        &.head{
+            border-bottom: 1px solid #F2F2F2;
+            & .lmm-table__cell{
+                padding-bottom: 15px;
+                @media(max-width: 719px){
+                    padding-bottom: 10px;
+                }
+            }
+        }
+    }
+    &__cell{
+        display: table-cell;
+        padding: 20px 20px 20px 0;
+        font-size: 14px;
+        line-height: 21px;
+        @media(max-width: 719px){
+            padding: 15px 15px 15px 0;
+            display: block;
+            &:nth-child(1){
+                width: 100%;
+                padding-bottom: 0;
+            }
+            &:nth-child(2),
+            &:nth-child(3){
+                width: 49%;
+                display: inline-block;
+                vertical-align: top;
+            }
+        }
+    }
+    &.course{
+        & .lmm-table__row{
+            border-top: 1px solid #F2F2F2;
+            &:last-child{
+                border-bottom: 1px solid #F2F2F2;
+            }
+        }
+    }
+}

@@ -1,0 +1,8 @@
+
+.vscode
+_!DEPLOYER/node_modules
+_!DEPLOYER/deploy_version
+build/options.json
+cases/node_modules
+cases/package-lock.json
+cases/package-lock.json

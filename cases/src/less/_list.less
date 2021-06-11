@@ -1,0 +1,77 @@
+.lmm-list{
+    &__ol{
+        list-style: none;
+        & li{
+            position: relative;
+            padding-left: 32px;
+            counter-increment: my-awesome-counter;
+            &::before{
+                content: counter(my-awesome-counter) "";
+                position: absolute;
+                left: 0;
+                color: #2F80ED;
+                font-weight: bold;
+            }
+        }
+        &.x5{
+            & li{
+                &::before{
+                    color: #FF6200;
+                }
+            }
+        }
+        &.upeco{
+            & li{
+                &::before{
+                    color: #FF722E;
+                }
+            }
+        }
+    }
+    &__ul{
+        list-style: none;
+        & li{
+            position: relative;
+            padding-left: 20px;
+            &::before{
+                content: "";
+                position: absolute;
+                width: 5px;
+                height: 5px;
+                top: 8px;
+                left: 0;
+                background: #017FF3;
+                border-radius: 50%;
+            }
+        }
+        &.line{
+            & li{
+                padding-left: 30px;
+                &::before{
+                    content: "";
+                    position: absolute;
+                    width: 16px;
+                    height: 2px;
+                    top: 11px;
+                    left: 0;
+                    background: #0D7DCE;
+                    border-radius: 0;
+                }
+            }
+        }
+        &.white{
+            & li{
+                &::before{
+                    background: @white;
+                }
+            }
+        }
+        &.upeco{
+            & li{
+                &::before{
+                    background: #FF722E;
+                }
+            }
+        }
+    }
+}

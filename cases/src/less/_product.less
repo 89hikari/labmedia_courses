@@ -1,0 +1,60 @@
+.lmm-product{
+	&__item{
+		position: relative;
+		padding: 18px 5px 13px 90px;
+		@media(max-width: 720px){
+			padding-top: 5px;
+			padding-left: 0;
+			border-top: 1px solid #0D7DCE;
+		}
+		&.have-sub{
+			padding-left: 162px;
+		}
+		&-sub{
+			display: inline-block;
+			vertical-align: top;
+			position: relative;
+			width: 32%;
+			@media(max-width: 720px){
+				padding-top: 5px;
+				width: 100%;
+				padding-left: 0;
+				border-top: 1px solid #0D7DCE;
+				margin-bottom: 15px;
+			}
+		}
+		&-table{
+			display: table;
+			width: 100%;
+			&-row{
+				display: table-row;
+			}
+			&-cell{
+				display: table-cell;
+				border-spacing: 0;
+        		border-collapse: collapse;
+        		vertical-align: top;
+        		&:first-child{
+        			padding-right: 5px;
+        		}
+        		&:last-child{
+        			padding-right: 20px;
+        		}
+			}
+		}
+	}
+	&__img{
+		position: absolute;
+		top: 0;
+		left: 0;
+	}
+	&__calc{
+		font-size: 40px;
+		line-height: 35px;
+	}
+	&__line{
+		width: 100%;
+		height: 1px;
+		background: fade(#000, 20);
+	}
+}

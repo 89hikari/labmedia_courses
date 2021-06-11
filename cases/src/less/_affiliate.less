@@ -1,0 +1,363 @@
+/* ////////////// Партнёрская программа стили ////////////// */
+
+.affiliate-about-title{
+	max-width: 400px;
+}
+
+.affiliate-about-position{
+	padding-top: 10px;
+	border-top: 1px solid #cce4fc;
+	position: relative;
+}
+
+.affiliate-about-position::before{
+	position: absolute;
+	content: "";
+	width: 32px;
+	height: 1px;
+	background-color: #027ff3;
+	top: -1px;
+	left: 0;
+}
+
+.affiliate-about-become{
+	padding: 20px;
+	border: 1px solid #027ff3;
+	border-radius: 20px;
+	&-link{
+		width: 100%;
+		background-color: #027ff3;
+		color: #fff;
+		border-radius: 44px;
+		font-size: 14px !important;
+		display: block;
+		text-align: center;
+		line-height: inherit;
+		padding: 11px;
+		transition: 0.2s;
+		margin-top: 1em;
+	}
+	&-link:hover{
+		transition: 0.2s;
+		background-color: #2da0f2;
+    	color: #fff!important;
+	}	
+}
+
+@media (min-width: 720px) {
+	.affiliate-about-become{
+		border: none;
+		padding: 0;
+	}
+}
+
+.affiliate{
+	
+	&-more{
+		color: white;
+		background-image: linear-gradient(to right bottom, #3c0d43, #3a154d, #351d58, #2e2561, #232c6b, #1a2d6b, #0f2f6b, #00306a, #002c61, #002858, #00244f, #002046);
+		padding: 40px !important;
+		@media (max-width: 719px) {
+			&-title {
+				margin-bottom: 40px !important;
+			}
+		}
+		&-link{
+			width: 100%;
+			height: 44px;
+			background-color: white;
+			color: #000;
+			border-radius: 44px;
+			display: block;
+			text-align: center;
+			line-height: 44px;
+		}
+	}
+    @media (max-width: 719px) {
+        &-more{
+            padding: 30px 15px 30px 15px !important;
+        }
+    }
+	&-help{
+        &-wrapper{
+            padding: 0 25px !important;
+        }
+		&-positions{
+			border: 1px solid #0180f3;
+			border-radius: 60px;
+			padding: 20px 10px 20px 40px;
+			display: flex;
+			flex-direction: row;
+			align-items: center;
+		}
+
+		@media (max-width: 719px) {
+			&-positions {
+				padding-left: 25px;
+			}
+		}
+		
+		&-become{
+			padding: 20px;
+			border: 1px solid #027ff3;
+			border-radius: 30px;
+			&-title{
+				@media (max-width: 719px) {
+					br{
+						display: none;
+					}
+				}
+			}
+		}
+        @media (max-width: 719px) {
+			&-become {
+				padding: 20px !important;
+			}
+		}
+	}
+	&-counter{
+		float: left;
+		margin-right: 10px;
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 50px;
+		color: #FFFFFF;
+		text-shadow: 
+			-0   -1px 0   #017FF3,
+			0   -1px 0   #017FF3,
+			-0    1px 0   #017FF3,
+			0    1px 0   #017FF3,
+			-1px -0   0   #017FF3,
+			1px -0   0   #017FF3,
+			-1px  0   0   #017FF3,
+			1px  0   0   #017FF3,
+			-1px -1px 0   #017FF3,
+			1px -1px 0   #017FF3,
+			-1px  1px 0   #017FF3,
+			1px  1px 0   #017FF3,
+			-1px -1px 0   #017FF3,
+			1px -1px 0   #017FF3,
+			-1px  1px 0   #017FF3,
+			1px  1px 0   #017FF3;
+	}
+	&-about_company{
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		@media (max-width: 719px) {
+			flex-direction: column;
+			align-items: inherit;
+		}
+		&-description{
+			flex: 1;
+			padding-right: 70px;
+			@media (max-width: 719px) {
+				margin-bottom: 30px;
+				padding-right: 0;
+			}
+		}
+		&-statistics{
+			flex: 1;
+			display: flex;
+			flex-direction: row;
+			flex-wrap: wrap;
+			align-self: flex-end;
+			position: relative;
+			&::before{
+				content: '';
+				width: 1px;
+				height: 92%;
+				position: absolute;
+				top: 5px;
+				bottom: 0;
+				margin: auto 0;
+				left: -45px;
+				background-color: rgba(0,0,0,.1);
+				@media (max-width: 719px) {
+					display: none;
+				}
+			}
+			&-element{
+				width: 50%;
+				@media (max-width: 719px) {
+					padding-left: 0;
+					padding-right: 20px;
+				}
+				&:nth-child(2) {
+					padding-right: 25px;
+				}
+			}
+		}
+	}
+	&-show_more_link{
+		max-width: 200px;
+		padding: 11px;
+		background-color: #027ff3;
+		color: #fff;
+		border-radius: 44px;
+		display: block;
+		font-size: 14px !important;
+		text-align: center;
+		line-height: inherit;
+		transition: 0.2s;
+		margin-top: 1em;
+	}
+	&-show_more_link:hover{
+		transition: 0.2s;
+		background-color: #2da0f2;
+    	color: #fff!important;
+	}	
+}
+
+.aff-header{
+	height: auto;
+	width: 100%;
+    max-width: 100%;
+    min-height: 400px !important;
+    margin-right: auto;
+    margin-left: auto;
+	padding-top: 30px;
+	padding-bottom: 40px;
+	background-image: url(../images/affiliate/aff-header-bg.jpg);
+	background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+	color: #fff;
+	position: relative;
+	@media(max-width: 719px){
+		background: url(../images/affiliate/aff-header-xs.jpg);
+		background-size: cover;
+		&-title {
+			position: relative;
+			font-size: 38px !important;
+			z-index: 2;
+			margin-top: 0 !important;
+			line-height: 50px !important;
+		}
+		&:before{
+			position: absolute;
+			content: "";
+			width: 202px;
+			height: 127px;
+			background: url(../images/affiliate/aff-circle-xs-1.png) no-repeat;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+		}
+		&:after{
+			position: absolute;
+			content: "";
+			width: 203px;
+			height: 230px;
+			background: url(../images/affiliate/aff-circle-xs-2.png) no-repeat;
+			top: 60px;
+			right: 0;
+		}
+	}
+	&-title {
+		margin-top: 20px;
+		font-style: normal;
+		font-size: 54px;
+		line-height: 70px;
+	}
+}
+
+.affiliate-header{
+	background-repeat: no-repeat;
+	background-position: center center;
+	background-size: cover;
+	background-color: #002c61;
+    padding: 25px 35px 25px 0 !important;
+	&-content{
+		color: #000;
+		&-description{
+			position: relative;
+			color: #000;
+			background-color: #fff;
+			padding: 32px;
+			max-width: 465px;
+			border-radius: 32px;
+			margin-left: auto;
+			z-index: 2;
+			@media (max-width: 719px) {
+				padding: 20px;
+				&-title{
+					font-size: 14px !important;
+					line-height: 21px !important;
+				}
+			}
+		}
+	}
+}
+
+.join-us{
+	width: 100%;
+    max-width: 100%;
+    min-height: 450px !important;
+	padding-top: 40px;
+	padding-bottom: 60px;
+    margin-right: auto;
+    margin-left: auto;
+	background-image: url(../images/affiliate/aff-bg2.jpg);
+	background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+	color: #fff;
+	&-counter{
+		font-family: Montserrat;
+		font-style: normal;
+		font-weight: 800;
+		font-size: 38px;
+		line-height: 50px;
+		margin-bottom: 5px;
+		@media (max-width: 719px) {
+			font-size: 30px !important;
+			line-height: 40px !important;
+		}
+	}
+	&-description-title{
+		font-weight: bold;
+	}
+	&-more-title{
+		position: relative;
+		padding-top: 15px;
+		&::before{
+			position: absolute;
+			content: "";
+			top: 0;
+			height: 1px;
+			width: 100%;
+			background-color: #fff;
+			opacity: 0.14;
+		}
+	}
+	@media (max-width: 719px) {
+		padding-top: 23px;
+		&-description-bottom{
+			font-size: 16px !important;
+			line-height: 24px !important;
+		}
+	}
+	@media (max-width: 719px) {
+		.lmm-mb-xs__40 {
+			margin-bottom: 40px !important;
+		}
+	}
+}
+
+.aff-partners{
+	&-description{
+		color: #000;
+		opacity: 0.5;
+		max-width: 205px;
+	}
+	img{
+		max-height: 50px;
+	}
+	.lmm-text__s16{
+		opacity: 0.5;
+	}
+}
+
+/* /////////////////////// Партнёрская программа, конец ///////////////////////////// */
