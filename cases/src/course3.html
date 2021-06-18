@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=1000, initial-scale=1, maximum-scale=1, user-scalable=1">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="css/main.css">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+
+    <script type="text/javascript">
+        /*$(document).ready(function() {*/
+
+        $(window).resize(function () {
+            change_viewport();
+        });
+        /* });*/
+
+        function change_viewport() {
+            if (window.screen.width > 720) {
+                $("meta[name = viewport]").attr("content", "width=1000, maximum-scale=1, user-scalable=1");
+
+            } else {
+                $("meta[name = viewport]").attr("content", "width=device-width");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- header-->
+    //= template/header.html
+    <!--header end -->
+
+    <div class="lmm-main-container">
+        <div class="lmm-mb__50">
+            <div class="lmm-container">
+                <div class="lmm-row">
+                    <div class="col-lg-24 col-xs-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="img-header img-header__course page lmm-mb__40 fasilitation-header" style="background-image: url(images/course/communication-control.jpg) !important; background-size: cover !important;
+        background-repeat: no-repeat !important;
+        background-position: center center !important;"></div>
+
+        <div class="lmm-mb__50">
+            <div class="lmm-container">
+                <div class="lmm-row">
+                    <div class="col-lg-24 col-xs-12">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="">
+            <div class="lmm-container">
+                <div class="lmm-row">
+                    <div class="col-lg-3 col-xs-12"></div>
+                    <div class="col-lg-18 col-xs-12">
+                        <nav class="fasilitation_nav">
+                            <ul class="fasilitation_nav__items">
+                                <li class="fasilitation_nav__item">
+                                    <a href="/library/courses/" class="fasilitation_nav__item__link">Все курсы</a>
+                                </li>
+                                <li class="fasilitation_nav__item">
+                                    <a class="lmm-course__type lmm-mb__10 fasilitation_nav__item__link" href="/library/softskills/">Soft Skills</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="lmm-title__h1">Контроль над коммуникацией</div>
+                        <div class="lmm-title__h3">Разнообразие делового общения</div>
+                    </div>
+                    <div class="col-lg-3 col-xs-12"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="lmm-mb__40">
+            <div class="lmm-container">
+                <div class="lmm-row">
+                    <div class="col-lg-3 col-xs-12"></div>
+                    <div class="col-lg-18 col-xs-12">
+
+                    </div>
+                    <div class="col-lg-3 col-xs-12"></div>
+                </div>
+            </div>
+        </div>
+
+        <section class="lmm-mb__80">
+            <div class="lmm-container">
+                <div class="lmm-row">
+                    <div class="col-lg-3 col-xs-12"></div>
+                    <div class="col-lg-18 col-xs-12">
+                        <div class="lmm-title__h3 lmm-mb__15">Результаты обучения:</div>
+                        <ul class="lmm-list__ul line lmm-mb__30">
+                            <li class="lmm-text__s16 lmm-text__gray3 lmm-mb__15">Сотрудники понимают, как ставить задачи
+                                коллегам и подчинённым.</li>
+                            <li class="lmm-text__s16 lmm-text__gray3 lmm-mb__15">Знают особенности общения между
+                                руководителем и подчинённым: как они проявляются в деловой обстановке и при неформальном
+                                общении.</li>
+                            <li class="lmm-text__s16 lmm-text__gray3 lmm-mb__15">Считают пост в соцсетях элементом
+                                коммуникации с партнёрами и клиентами, понимают важность его правильного построения.
+                            </li>
+                            <li class="lmm-text__s16 lmm-text__gray3 lmm-mb__15">Учатся выстраивать коммуникацию с
+                                аудиторией на примере корпоративного тоста.</li>
+                            <li class="lmm-text__s16 lmm-text__gray3 lmm-mb__15">Узнают способы управления коммуникацией
+                                на деловом совещании.</li>
+                        </ul>
+                        <a href="#" class="btn btn--blue">Запросить демо</a>
+                    </div>
+                    <div class="col-lg-3 col-xs-12"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="lmm-mb__80 courses-description">
+            <div class="lmm-container">
+                <div class="lmm-row">
+                    <div class="col-lg-3 col-xs-12"></div>
+                    <div class="col-lg-18 col-xs-12">
+                        <div class="lmm-title__h3 lmm-mb__40">Особенности курса</div>
+                        <div class="lmm-title__h5 lmm-mb__15">Акцент на тренировку навыка коммуникации</div>
+                        <div class="lmm-row lmm-mb__20 courses-description-img-container">
+                            <div class="col-lg-5 col-xs-4"></div>
+                            <img class="courses-description-img-odd" src="images/course/ignat.png" alt="">
+                            <div class="col-lg-19 col-xs-8">
+                                <div class="lmm-course__item" style="border-bottom-left-radius: 0 !important;">
+                                    <div class="lmm-text__s14 lmm-text__gray3">Если курс «Речевой интеллект» закладывает
+                                        основу для понимания
+                                        коммуникативных навыков, то этот курс позволяет их тренировать. Здесь
+                                        пользователя ждут многоуровневые кейсы и ёмкая теория по деловому
+                                        общению.</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="lmm-title__h5 lmm-mb__20">Продуманный сюжет и запоминающаяся графика</div>
+                        <div class="lmm-row lmm-mb__15 courses-description-img-container">
+                            <div class="col-lg-19 col-xs-8">
+                                <div class="lmm-course__item" style="border-bottom-right-radius: 0 !important;">
+                                    <div class="lmm-text__s14 lmm-text__gray3">Курс выполнен в формате визуальной новеллы с фантастическим
+                                        сюжетом и несколькими концовками. Вы встретите знакомых персонажей
+                                        и новых героев в неожиданных ситуациях, поможете им справиться с
+                                        трудностями с помощью коммуникации.
+                                        </div>
+                                </div>
+                            </div>
+                            <img class="courses-description-img-even" src="images/course/kira.png" alt="">
+                        </div>
+                        <div class="lmm-title__h5 lmm-mb__15">Разбор ситуаций в канве сюжета</div>
+                        <div class="lmm-row courses-description-img-container">
+                            <div class="col-lg-5 col-xs-4"> 
+                            </div>
+                            <img class="courses-description-img-odd" src="images/course/timur.png" alt="">
+                            <div class="col-lg-19 col-xs-8">
+                                <div class="lmm-course__item" style="border-bottom-left-radius: 0 !important;">
+                                    <div class="lmm-text__s14 lmm-text__gray3">Формы и виды современного делового общения многообразны. В этом
+                                        курсе мы не отделяем их от ситуаций, в которых они проявляются.
+                                        Пользователь будет принимать решение, что говорить при выдаче
+                                        поручения сотруднику или выступлении с тостом, выбирать правильные
+                                        действия на совещании и грамотные фразы для публикации в соцсети.
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <!-- footer-->
+    //= template/footer.html
+    <!--footer end -->
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script>
+        $('.lmm-slider').slick({
+            autoplay: false,
+            speed: 500,
+            infinite: true,
+            dots: true,
+            arrows: true,
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            responsive: [{
+                breakpoint: 719,
+                settings: {
+                    arrows: false,
+                }
+            }]
+        });
+        // Safari swipe fix
+        $('.lmm-slider').bind('touchstart', function () {
+            console.log('touchstart')
+        });
+    </script>
+</body>
+
+</html>

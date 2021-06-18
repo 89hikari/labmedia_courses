@@ -1775,9 +1775,14 @@ template {
   color: #0d7dce;
 }
 .fasilitation_nav__item:not(:first-child) {
+  display: block;
   padding-left: 16px;
   margin-left: 12px;
   position: relative;
+}
+.fasilitation_nav__item:not(:first-child) a:hover,
+.fasilitation_nav__item:not(:first-child) a:active {
+  color: #83af00;
 }
 .fasilitation_nav__item:not(:first-child)::before {
   position: absolute;
@@ -1786,6 +1791,30 @@ template {
   font-size: 14px;
   content: '/';
   opacity: 0.8;
+}
+.courses-description .courses-description-img-container {
+  position: relative;
+}
+.courses-description .courses-description-img-odd {
+  position: absolute;
+  bottom: 10px;
+  left: 0;
+  width: 120px;
+  height: 120px;
+}
+.courses-description .courses-description-img-even {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  width: 120px;
+  height: 120px;
+}
+@media (max-width: 719px) {
+  .courses-description .courses-description-img-odd,
+  .courses-description .courses-description-img-even {
+    width: 95px;
+    height: 95px;
+  }
 }
 .lmm-download__item {
   display: block;
